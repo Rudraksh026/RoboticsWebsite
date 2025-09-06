@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark-first robotics theme */
+    --background: 222 47% 5%;
+    --foreground: 210 50% 95%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 50% 95%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 50% 95%;
+
+    --primary: 200 100% 50%;
+    --primary-foreground: 222 47% 5%;
+
+    --secondary: 240 50% 25%;
+    --secondary-foreground: 210 50% 95%;
+
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 25% 65%;
+
+    --accent: 270 75% 60%;
+    --accent-foreground: 210 50% 95%;
+
+    --tech-blue: 200 100% 50%;
+    --tech-purple: 270 75% 60%;
+    --tech-orange: 25 100% 55%;
+    --tech-green: 142 76% 36%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 50% 95%;
+
+    --border: 222 47% 15%;
+    --input: 222 47% 12%;
+    --ring: 200 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom robotics theme colors */
+    --gradient-primary: linear-gradient(135deg, hsl(200 100% 50%), hsl(270 75% 60%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 5%), hsl(240 50% 15%));
+    --gradient-card: linear-gradient(135deg, hsl(222 47% 8%), hsl(240 40% 12%));
+    
+    /* Glows and effects */
+    --glow-primary: 0 0 20px hsl(200 100% 50% / 0.3);
+    --glow-accent: 0 0 20px hsl(270 75% 60% / 0.3);
+    --shadow-tech: 0 10px 30px hsl(200 100% 50% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 50% 95%;
+    --sidebar-primary: 200 100% 50%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 240 50% 25%;
+    --sidebar-accent-foreground: 210 50% 95%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 200 100% 50%;
+  }
+
+  .light {
+    /* Fallback light theme (not primary focus) */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 200 100% 40%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 270 75% 50%;
+    --accent-foreground: 210 40% 98%;
+    --tech-blue: 200 100% 40%;
+    --tech-purple: 270 75% 50%;
+    --tech-orange: 25 100% 45%;
+    --tech-green: 142 76% 36%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 200 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: linear-gradient(135deg, hsl(222 47% 5%), hsl(240 50% 15%));
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .btn-hero {
+    @apply bg-transparent border-2 border-primary text-primary px-8 py-3 rounded-xl font-semibold;
+    @apply hover:bg-primary hover:text-primary-foreground hover:shadow-lg;
+    @apply transition-all duration-300 hover:scale-105;
+    box-shadow: var(--glow-primary);
+  }
+
+  .btn-accent {
+    @apply bg-gradient-to-r from-accent to-tech-purple text-accent-foreground px-8 py-3 rounded-xl font-semibold;
+    @apply hover:shadow-lg transition-all duration-300 hover:scale-105;
+    box-shadow: var(--glow-accent);
+  }
+
+  /* Card styles */
+  .card-tech {
+    @apply bg-card border border-border rounded-2xl p-6;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-tech);
+    @apply hover:border-primary/50 transition-all duration-300;
+  }
+
+  /* Text effects */
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Auto-scroll animation */
+  .scroll-animation {
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Floating animation */
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Pulse glow */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse-glow {
+    from { box-shadow: var(--glow-primary); }
+    to { box-shadow: 0 0 30px hsl(200 100% 50% / 0.5); }
+  }
+}
