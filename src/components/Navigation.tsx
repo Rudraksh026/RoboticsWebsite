@@ -81,11 +81,6 @@ export default function Navigation() {
                   {item.name}
                 </NavLink>
               ))}
-              <div className="px-4 pt-2">
-                <button onClick={() => navigate('/join-us')} className="btn-hero text-sm px-6 py-2 w-full">
-                  Join Us
-                </button>
-              </div>
             </div>
           </div>
         )}
