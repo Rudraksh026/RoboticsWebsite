@@ -2,19 +2,19 @@ import React from 'react';
 
 const highlights = [
   {
-    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2025.jpg",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2025.webp",
     title: "Inbotics 2025"
   },
   {
-    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2024.jpg",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2024.webp",
     title: "Inbotics 2023",
   },
   {
-    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2023.jpg",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/inbotics2023.webp",
     title: "Inbotics 2022",
   },  
   {
-    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/RcCar.png",
+    image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/highlight/RcCar.webp",
     title: "RC Car"
   }
 ];
