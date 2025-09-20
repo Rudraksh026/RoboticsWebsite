@@ -30,7 +30,7 @@ const pastEvents = [
     location: '205 B, NCT',
     description: 'Interview the new candidate to participate into The Robotics Club.',
     category: 'Induction',
-    participants: '50+ Teams',
+    participants: '50+ Candidates',
     image: 'https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Induction2025.webp',
     gradient: 'from-accent to-tech-purple',
     status : 'Completed'
