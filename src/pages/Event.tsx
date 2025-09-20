@@ -5,6 +5,23 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const upcomingEvents = [
+  // {
+  //   id: 1,
+  //   title: ' 2025',
+  //   date: '-',
+  //   time: '02:00 PM - 05:00 PM',
+  //   location: '205 B, NCT',
+  //   description: 'Interview the new candidate to participate into The Robotics Club.',
+  //   category: 'Induction',
+  //   participants: '50+ Teams',
+  //   image: 'https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Induction2025.webp',
+  //   gradient: 'from-accent to-tech-purple',
+  //   registrationLink : 'https://forms.gle/DkuRMPbFFZPTcuV46'
+  // },
+  
+];
+
+const pastEvents = [
   {
     id: 1,
     title: 'Induction 2025',
@@ -16,12 +33,8 @@ const upcomingEvents = [
     participants: '50+ Teams',
     image: 'https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Induction2025.webp',
     gradient: 'from-accent to-tech-purple',
-    registrationLink : 'https://forms.gle/DkuRMPbFFZPTcuV46'
+    status : 'Completed'
   },
-  
-];
-
-const pastEvents = [
   {
     id: 4,
     title: 'Inbotics 2025',
@@ -33,7 +46,7 @@ const pastEvents = [
     participants: '120+ Visitors',
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Inbotics2025.webp",
     gradient: 'from-tech-purple to-accent',
-    status: 'completed',
+    status: 'Completed',
   },
   {
     id: 5,
@@ -46,7 +59,7 @@ const pastEvents = [
     participants: '50+ Candidates',
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Induction2024.webp",
     gradient: 'from-tech-green to-primary',
-    status: 'completed'
+    status: 'Completed'
   },
   {
     id: 6,
@@ -59,7 +72,7 @@ const pastEvents = [
     participants: '20+ Teams',
     image: "https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Ranbhoomi2024.webp",
     gradient: 'from-primary to-tech-orange',
-    status: 'completed',
+    status: 'Completed',
   }
 ];
 
