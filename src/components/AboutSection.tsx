@@ -56,7 +56,7 @@ export default function AboutSection() {
           <div className="space-y-4">
             <div className="card-tech">
               <h4 className="text-xl font-semibold mb-2 text-primary">Established</h4>
-              <p className="text-muted-foreground">2012 - Building excellence for over 13 years</p>
+              <p className="text-muted-foreground">2008 - Building excellence for over 17 years</p>
             </div>
             <div className="card-tech">
               <h4 className="text-xl font-semibold mb-2 text-accent">Focus Areas</h4>
