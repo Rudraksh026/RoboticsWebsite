@@ -5,25 +5,25 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 const upcomingEvents = [
-  {
-    id: 1,
-    title: 'Inbotics 2025',
-    date: '2025-11-05',
-    time: '02:00 PM - 05:00 PM',
-    location: '114 BN Hall, NCT',
-    description: 'Intensive 5-day bootcamp covering Arduino programming and hardware interfacing.',
-    category: 'Workshop',
-    participants: '100+ Teams',
-    image: 'https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Inbotics.webp',
-    gradient: 'from-accent to-tech-purple',
-    registrationLink : 'https://forms.gle/gYfgSV5rkeb3U9tn7'
-  },
   
 ];
 
 const pastEvents = [
+   {
+    id: 5,
+    title: 'Inbotics 2025',
+    date: '2025-11-25',
+    time: '02:00 PM - 05:00 PM',
+    location: '114 BN Hall, NCT',
+    description: 'Intensive 5-day bootcamp covering Arduino programming and hardware interfacing.',
+    category: 'Workshop',
+    participants: '90+ Visitors',
+    image: 'https://pub-b9cd201fbde6424783fdf034160caaab.r2.dev/events/Inbotics.webp',
+    gradient: 'from-accent to-tech-purple',
+    status: 'completed'
+  },
   {
-    id: 1,
+    id: 4,
     title: 'Induction 2025',
     date: '2025-09-18',
     time: '02:00 PM - 05:00 PM',
@@ -36,7 +36,7 @@ const pastEvents = [
     status : 'Completed'
   },
   {
-    id: 4,
+    id: 3,
     title: 'Inbotics 2025',
     date: '2025-03-18',
     time: '02:00 PM',
@@ -49,7 +49,7 @@ const pastEvents = [
     status: 'Completed',
   },
   {
-    id: 5,
+    id: 2,
     title: 'Induction 2024',
     date: '2024-10-23',
     time: '02:00 PM',
@@ -62,7 +62,7 @@ const pastEvents = [
     status: 'Completed'
   },
   {
-    id: 6,
+    id: 1,
     title: 'Ranbhoomi 2024',
     date: '2024-05-25',
     time: '10:00 AM',
